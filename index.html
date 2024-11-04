@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfa Tech</title>
+    <style>
+        /* Estilos básicos para centralizar o conteúdo e torná-lo responsivo */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+        }
+
+        .container {
+            text-align: center;
+            background: #000000;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #ffffff;
+    
+        }
+
+        .logo {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 0px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        .btn-instagram {
+            background-color: #414141;
+        }
+
+        .btn-whatsapp {
+            background-color: #414141;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head> 
+<body>
+
+    <div class="container">
+        <!-- Imagem no topo (logotipo ou qualquer imagem relevante) -->
+        <img src="images/alfa.png" alt="Logotipo da Empresa" class="logo">
+        <h1> Alfa Tech</h1> 
+        <h1><small style="font-size : 15px;">Assistência Técnica</small></h1> 
+
+       <!-- Botão para o Instagram com ícone -->
+       <button class="btn btn-instagram" onclick="redirectToInstagram()">
+        <i class="fab fa-instagram"></i> Instagram
+    </button>
+
+    <!-- Botão para o WhatsApp com ícone -->
+    <button class="btn btn-whatsapp" onclick="redirectToWhatsApp()">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </button>
+       
+    </div>
+
+    <script>
+        function redirectToInstagram() {
+            // Insira o link do perfil do Instagram aqui
+            window.location.href = "https://www.instagram.com/alfaa.tech/";
+        }
+
+        function redirectToWhatsApp() {
+            // Insira o número de WhatsApp aqui com o código do país, por exemplo: 5511999999999
+            const phoneNumber = "5533999231673";
+            window.location.href = `https://wa.me/5533999231673`;
+        }
+    </script>
+</body>
+</html>
